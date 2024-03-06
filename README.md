@@ -6,8 +6,8 @@
 
 This program  relies on <a href="https://exiftool.org/">ExifTool</a>.
 
-ExifTool program is used for reading, writing and manipulating metadata in various file formats.
-Exif Viewer allow the users to choose a file and then by using ExifTool the metadata of the file is displayed in a neat html format. Exif Viewer also allow to save the metadata as text, html or csv.
+ExifTool program is used for reading, writing and manipulating metadata in various file formats.<br>
+Exif Viewer allow the users to choose a file and then by using ExifTool the metadata of the file is displayed in a neat html format.<br>ExifViewer also allow to save the metadata as text, html or csv.
 
 ## Install ExifTool
 This program was built to be used on windows so we will need to download the windows version of exiftool.
@@ -56,7 +56,7 @@ Note that the command syntx in command line will be the name of the bat file so 
 
 Now our bat script is simple.<br>
 First we activate the venv of exif-view or a venv that has `PySide6`.<br>
-Then we run the exif-view python entry point `run.py`.<br> Note that the symbols `%*` mean that every argument we send from the command line will be passed to the run.py when it is executed.
+Then we run the exif-view python entry point `run.py`.<br> Note that the symbols `%*` mean that every argument we send from the command line will be passed to the run.py when it is executed.<br>
 This script will function better with full paths, try avoiding partial paths.
 
 ```console
@@ -71,8 +71,8 @@ The first step is to let the system know where is your bat file and to do that w
 Go to-> System properties -> Environment Variables -> Select Path -> Edit -> New ->
 Now type in the the path to `my-scripts` directory: C:\path\to\my-scripts\ -> OK -> OK
 
-And the second step is to open a cmd window and type in `exifview`.
-Now you should see ExifViewer.
+And the second step is to open a cmd window and type in `exifview`.<br>
+Now you should see ExifViewer.<br>
 You can also send a file with the command.
 
 ```console
