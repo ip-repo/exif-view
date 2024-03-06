@@ -10,10 +10,11 @@ ExifTool program is used for reading, writing and manipulating metadata in vario
 Exif Viewer allow the users to choose a file and then by using ExifTool the metadata of the file is displayed in a neat html format.<br>ExifViewer also allow to save the metadata as text, html or csv.
 
 ## Install ExifTool
-This program was built to be used on windows so we will need to download the windows version of exiftool.
-Navigate to <a href="https://exiftool.org/">ExifTool</a> homepage and download the `Windows Executable` zip folder. 
-Inside the zip folder usally there is a exe file name `exiftool(-k)` change the name of this exe file to `exiftool`.
-This is the ExifTool executable and we will need a copy of that in our project directory.
+This program was built to be used on windows so we will need to download the windows version of exiftool.<br>
+Navigate to <a href="https://exiftool.org/">ExifTool</a> homepage and download the `Windows Executable` zip folder.<br> 
+Inside the zip folder usally there is a exe file name `exiftool(-k)` change the name of this exe file to `exiftool`.<br>
+This is the ExifTool executable and we will need a copy of that in our project directory.<br>
+Note: If you add exiftool to environment PATH variables then you dont to have a copy of exiftool in `exif-view` project directory.
 
 ## How to use the program
 After you have downloaded ExifTool its time to clone this repo.
