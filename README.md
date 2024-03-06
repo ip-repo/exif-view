@@ -68,7 +68,7 @@ At this point we have the script `exifview.bat` and the python project `exif-vie
 
 The first step is to let the system know where is your bat file and to do that we need to add to enivronment variables the path to the directory that holds our bat file named `my-scripts`.
 
-Go to-> System properties -> Environment Variables Select Path -> Edit -> New ->
+Go to-> System properties -> Environment Variables -> Select Path -> Edit -> New ->
 Now type in the the path to `my-scripts` directory: C:\path\to\my-scripts\ -> OK -> OK
 
 And the second step is to open a cmd window and type in `exifview`.
