@@ -50,13 +50,13 @@ python run.py c:\A\FileSome\where\On\The\System\file.txt
 python run.py c:/A/FileSome/where/On/The/System/file.html
 ```
 ## How to launch ExifViewer from command line
-On windows you can execute bat files from cmd so we will use that to launch ExifViewer when ever we type in a specific command.
-Lets say we have some where on the system a folder that holds script bat `my-scripts` indside of it lets create a bat file called `exifview.bat`.
+On windows you can execute bat files from cmd so we will use that to launch ExifViewer when ever we type in a specific command.<br>
+Lets say we have some where on the system a folder that holds script bat `my-scripts` indside of it lets create a bat file called `exifview.bat`.<br>
 Note that the command syntx in command line will be the name of the bat file so for us it will be `exifview`.
 
-Now our bat script is simple.
-First we activate the venv of exif-view or a venv that has `PySide6`.
-Then we run the exif-view python entry point `run.py`.  Note that the symbols `%*` mean that every argument we send from the command line it send to the run.py when it is executed.
+Now our bat script is simple.<br>
+First we activate the venv of exif-view or a venv that has `PySide6`.<br>
+Then we run the exif-view python entry point `run.py`.<br> Note that the symbols `%*` mean that every argument we send from the command line will be passed to the run.py when it is executed.
 This script will function better with full paths, try avoiding partial paths.
 
 ```console
@@ -66,6 +66,17 @@ call c:\path\to\exif-venv\Scripts\deactivate.bat
 ```
 At this point we have the script `exifview.bat` and the python project `exif-view` lets continue and see how we can call `exifview.bat` from the command line and launch exif-view gui program.
 
-The first step is to let the system know where is your bat file and to do that we need to add to enivronment variables the path to the directory that holds our bat file.
+The first step is to let the system know where is your bat file and to do that we need to add to enivronment variables the path to the directory that holds our bat file named `my-scripts`.
 
+Go to-> System properties -> Environment Variables Select Path -> Edit -> New ->
+Now type in the the path to `my-scripts` directory: C:\path\to\my-scripts\ -> OK -> OK
+
+And the second step is to open a cmd window and type in `exifview`.
+Now you should see ExifViewer.
+You can also send a file with the command.
+
+```console
+C:\Users\user\photos> exifview c:\Users\user\phots\photo.png
+```
+This will load to ExifViewer the file metadata.
 
