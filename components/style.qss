@@ -1,1 +1,30 @@
+QWidget { 
+	background-color: lightgreen;
+	color:black;
+
+	
+} 
+QTextEdit {
+	font-size: 12pt;
+	background-color:white;
+	color:gray;
+	border:none;
+
+}
+
+
+QPushButton {
+	qproperty-iconSize: 64px;
+	color:black;
+	font-size:15pt;
+	background-color:white;
+	border:none;
+	
+}
+QPushButton:hover {
+	color:black;
+	background-color:white;
+	border:15px solid lightgreen;
+	
+}
 
