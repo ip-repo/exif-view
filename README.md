@@ -29,8 +29,8 @@ You can also call the program with one additional parameter that represent a fil
 If add a file path to run command is it recommended to use the file full path
 
 ```console
-python run c:\A\FileSome\where\On\The\System\file.txt
-python run c:/A/FileSome/where/On/The/System/file.html
+python run.py c:\A\FileSome\where\On\The\System\file.txt
+python run.py c:/A/FileSome/where/On/The/System/file.html
 ```
 
 
