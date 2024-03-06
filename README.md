@@ -33,7 +33,7 @@ exif-view 📁
 Lets continue and create a virtual environment, activate it and `pip install PySide6`.
 
 ```console
-python -m venv exif_venv
+python -m venv exif-venv
 exif_venv\Scripts\activate
 pip install PySide6 #6.6.2
 ```
@@ -50,6 +50,22 @@ python run.py c:\A\FileSome\where\On\The\System\file.txt
 python run.py c:/A/FileSome/where/On/The/System/file.html
 ```
 ## How to launch ExifViewer from command line
-On windows you execute bat files from cmd so we will use that to launch ExifViewer when ever we type in a specific command.
+On windows you can execute bat files from cmd so we will use that to launch ExifViewer when ever we type in a specific command.
+Lets say we have some where on the system a folder that holds script bat `my-scripts` indside of it lets create a bat file called `exifview.bat`.
+Note that the command syntx in command line will be the name of the bat file so for us it will be `exifview`.
+
+Now our bat script is simple.
+First we activate the venv of exif-view or a venv that has `PySide6`.
+Then we run the exif-view python entry point `run.py`.  Note that the symbols `%*` mean that every argument we send from the command line it send to the run.py when it is executed.
+This script will function better with full paths, try avoiding partial paths.
+
+```console
+call c:\path\to\exif-venv\Scripts\activate
+python c:\path\to\python\script\exif-view\run.py %*
+call c:\path\to\exif-venv\Scripts\deactivate.bat
+```
+At this point we have the script `exifview.bat` and the python project `exif-view` lets continue and see how we can call `exifview.bat` from the command line and launch exif-view gui program.
+
+The first step is to let the system know where is your bat file and to do that we need to add to enivronment variables the path to the directory that holds our bat file.
 
 
