@@ -19,7 +19,7 @@ This is the ExifTool executable and we will need a copy of that in our project d
 After you have downloaded ExifTool its time to clone this repo.
 
 ```console
-git clone
+git clone https://github.com/ip-repo/exif-view.git
 ```
 Go to where ever you cloned this repo on your system and find the file `run.py` and paste next to him a copy of `exiftool.exe`.
 Now your project directory should look something like that:
