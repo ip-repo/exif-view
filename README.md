@@ -25,8 +25,8 @@ Go to where ever you cloned this repo on your system and find the file `run.py` 
 Now your project directory should look something like that:
 ```
 exif-view 📁
-    componets 📁
-    icons     📁
+    components 📁
+    icons      📁
     run.py
     exiftool.exe
 ```
