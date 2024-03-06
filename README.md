@@ -49,5 +49,7 @@ If you add a file path when running the file it is recommended to use the file f
 python run.py c:\A\FileSome\where\On\The\System\file.txt
 python run.py c:/A/FileSome/where/On/The/System/file.html
 ```
+## How to launch ExifViewer from command line
+On windows you execute bat files from cmd so we will use that to launch ExifViewer when ever we type in a specific command.
 
 
