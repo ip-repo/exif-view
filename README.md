@@ -12,7 +12,7 @@ Exif Viewer allow the users to choose a file and then by using ExifTool the meta
 ## Install ExifTool
 This program was built to be used on windows so we will need to download the windows version of exiftool.<br>
 Navigate to <a href="https://exiftool.org/">ExifTool</a> homepage and download the `Windows Executable` zip folder.<br> 
-Inside the zip folder usally there is a exe file named `exiftool(-k)` change the name of this exe file to `exiftool`.<br>
+Inside the zip folder there is a exe file named `exiftool(-k)` change the name of this exe file to `exiftool`.<br>
 This is the ExifTool executable and we will need a copy of that in our project directory.<br>
 Note: If you add exiftool to environment PATH variables then you dont to have a copy of exiftool in `exif-view` project directory.
 
